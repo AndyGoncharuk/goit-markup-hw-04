@@ -8,6 +8,7 @@
   --header-link-focus: #2196f3;
   --header-contact: #757575;
   --header-contact-hover-focus: #2196f3;
+  --hero-background: #C4C4C4;
   --order-service-hover: #188ce8;
   --order-service-focus: #188ce8;
   --order-service: #ffffff;
@@ -249,7 +250,14 @@ address {
 /* Баннер */
 
 .hero {
-  background-color: #2f303a;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background: var(--hero-background);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bunner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding: 200px 0;
 }
