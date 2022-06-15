@@ -1,4 +1,8 @@
 :root {
+  --body: #212121;
+  --body-background: #ffffff;
+  --web-color:  #2196f3;
+  --header-logo-studio: #000000;
   --header-link: #212121;
   --header-link-hover: #2196f3;
   --header-link-focus: #2196f3;
@@ -10,6 +14,7 @@
   --order-service-background: #2196f3;
   --studio-link-current: #2196f3;
   --portfolio-current: #2196f3;
+  --card-content-background: #ffffff;
   --advantage-text: #757575;
   --products-background: #f5f4fa;
   --products-hover: #ffffff;
@@ -18,6 +23,12 @@
   --products-focus-background: #2196f3;
   --products-active: #2196f3;
   --exemplum-product: #757575;
+  --team-background: #f5f4fa;
+  --item-team-background: #ffffff;
+  --footer-logo-studio: #ffffff;
+  --footer-background: #2f303a;
+  --address-postoffice: #ffffff;
+  --address-mail-tel: rgba(255, 255, 255, 0.6);
   --address-contacts-hover-focus: #2196f3;
 
   --team-gap-top: 50px;
@@ -44,11 +55,68 @@ html {
 /* хоча в нормалізаторі він е )) */
 
 body {
-  margin: 0;
   font-family: "Roboto", sans-serif;
-
-  color: #212121;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--body);
+  background: var(--body-background);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: var(--header-logo-studio);
+  }
+
+/*Header*/
 
 .header,
 .header-nav,
@@ -57,7 +125,7 @@ body {
   display: flex;
 }
 
-.header-logo,
+.logo,
 .header-link,
 .header-contacts {
   align-items: center;
@@ -74,23 +142,8 @@ body {
   justify-content: space-between;
 }
 
-.header-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.header-logo > .web {
-  color: #2196f3;
-}
-
-.header-logo > .studio {
-  color: #000000;
+.web {
+  color: var(--web-color);
 }
 
 .header-link {
@@ -107,12 +160,6 @@ body {
 
 .header-link .item:not(:last-child) {
   margin-right: 50px;
-}
-
-.header-link,
-.header-contacts {
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .studio-link-current {
@@ -164,9 +211,7 @@ body {
 }
 
 .header-contacts {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  margin-left: auto;
 }
 
 .header-contacts .item:not(:last-child) {
@@ -189,16 +234,7 @@ body {
   color: var(--header-contact-hover-focus);
 }
 
-.section {
-  padding: 94px 0;
-}
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
 /* Стили для index.html */
 
 .chapter {
@@ -241,8 +277,9 @@ body {
   cursor: pointer;
   background: var(--order-service-background);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
-  margin: auto;
+  margin: 0 auto;
   padding: 10px 32px;
 }
 
@@ -290,36 +327,29 @@ body {
 
 /*  Чем мы занимаемся  */
 
-.list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .technics {
-  list-style: none;
   display: flex;
-  justify-content: space-between;
   margin-top: 50px;
 }
 
-img {
-  display: block;
+.technics .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.business {
+  padding-top: 0;
 }
 
 /*  Наша команда  */
 
-.team {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.section-team {
+  background: var(--team-background);
+}
 
+.team {
   display: flex;
   flex-wrap: wrap;
-
   margin-left: calc(-1 * var(--team-gap-left));
-
-  background: #f5f4fa;
 }
 
 .team > .item-team {
@@ -340,13 +370,14 @@ img {
 }
 
 .card-content {
-  padding: 30px 10px;
+  padding: 30px 0px;
+  background: var(--card-content-background);
 }
 
 .team-photo {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -363,7 +394,6 @@ img {
   margin-top: 10px;
   margin-bottom: 0;
 }
-
 /* Стили для portfolio.html */
 
 /*--Предложения--*/
@@ -373,7 +403,7 @@ img {
   justify-content: center;
   list-style: none;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   padding: 0;
 }
 
@@ -396,6 +426,7 @@ img {
   background: var(--products-background);
   cursor: pointer;
   font-family: inherit;
+  border: none;
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -487,8 +518,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 15px;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .exemplum-website,
@@ -500,13 +530,15 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--exemplum-product);
-  margin-top: 3px;
+
 }
 
 .exemplum > .item-exemplum {
   flex-basis: calc(100% / 3 - var(--exemplum-gap-left));
   margin-top: var(--exemplum-gap-top);
   margin-left: var(--exemplum-gap-left);
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .img-exemplum {
@@ -516,15 +548,14 @@ img {
 }
 
 .card-e-content {
-  padding: 4px 10px 16px;
-  border: 1px solid #eeeeee;
-  padding-bottom: 5px;
+  margin: 20px 24px;
+  
+  
 }
 
 /*--Футер--*/
 
 .footer,
-.footer-logo,
 .address,
 .address-contacts,
 .address-postoffice,
@@ -536,69 +567,49 @@ img {
 
 .footer {
   padding: 60px 0;
-
-  height: 252px;
-
-  background: #2f303a;
+  background: var(--footer-background);
 }
 
-.footer-logo {
-  text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 20px;
-}
-
-.footer-logo > .web {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-
-.footer-logo > .studio {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+.footer-logo-studio {
+  color: var(--footer-logo-studio);
 }
 
 .address {
-  display: grid;
-  font-style: normal;
-  align-content: space-around;
   margin-top: 20px;
+}
+
+.address-contacts .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-contacts {
   list-style: none;
 }
 
-.address-postoffice {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-
-  margin-bottom: 9px;
-}
-
+.address-postoffice,
 .address-mail,
 .address-tel {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
+.address-postoffice {
+  color: var(--address-postoffice);
+}
+.address-mail,
 .address-tel {
-  margin-top: 9px;
+  color: var(--address-mail-tel);
+}
+
+
+.address-postoffice:hover {
+  color: var(--address-contacts-hover-focus);
+}
+
+.address-postoffice:focus {
+  color: var(--address-contacts-hover-focus);
 }
 
 .address-mail:hover {
