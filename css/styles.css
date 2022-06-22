@@ -540,7 +540,7 @@ address {
 }
 
 .card-e-content {
-  margin: 20px 24px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
   
