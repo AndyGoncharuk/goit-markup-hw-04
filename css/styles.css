@@ -299,7 +299,7 @@ address {
   background: var(--order-service-focus);
 }
 
-/* Наши преимущества */
+/* Наши преимущества */ 
 
 .preference {
   display: flex;
@@ -331,6 +331,32 @@ address {
   color: var(--advantage-text);
   margin: 0;
 }
+
+.advantage::before {
+  display: block;
+  content: "" ;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-anten: {
+  background-image: url("../images/Group\ 1.svg");
+}
+
+.icon-clock {
+  background-image: url("../images/Group\ 2.svg");
+}
+
+.icon-plan {
+  background-image: url("../images/Group\ 3.svg");
+}
+
+.icon-technology {
+  background-image: url("../images/Group\ 4.svg");
+}
+
 
 /*  Чем мы занимаемся  */
 
