@@ -214,6 +214,26 @@ address {
   margin-left: auto;
 }
 
+.header-contacts .item::before {
+  display: inline-flex;
+  content: "" ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.icon-mail::before {
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/envelope.svg);
+}
+
+.icon-tel::before {
+  width: 10px;
+  height: 12px;
+  background-image: url(../images/smartphone.svg);
+}
 .header-contacts .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -332,7 +352,7 @@ address {
   margin: 0;
 }
 
-.item::before {
+.preference .item::before {
   display: block;
   content: "" ;
   height: 120px;
