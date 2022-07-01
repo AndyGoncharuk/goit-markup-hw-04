@@ -214,26 +214,17 @@ address {
   margin-left: auto;
 }
 
-.header-contacts .item::before {
-  display: inline-flex;
-  content: "" ;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.icon-mail, .icon-tel {
   margin-right: 10px;
 }
 
-.icon-mail::before {
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/envelope.svg);
+.icon-mail:hover,
+.icon-tel:hover,
+.icon-mail:focus,
+.icon-tel:focus {
+  fill: var(--header-contact-hover-focus);
 }
 
-.icon-tel::before {
-  width: 10px;
-  height: 12px;
-  background-image: url(../images/smartphone.svg);
-}
 .header-contacts .item:not(:last-child) {
   margin-right: 50px;
 }
