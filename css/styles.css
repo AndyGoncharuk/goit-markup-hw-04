@@ -433,6 +433,47 @@ address {
   margin-top: 10px;
   margin-bottom: 0;
 }
+
+.social-links {
+  display: flex;
+  margin: 16px 32px 30px;
+}
+
+.team-social {
+  
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  fill: red;
+  border-radius: 50%;
+  background-color:chartreuse;
+  background-position: center;
+  
+}
+
+.social-links .item:not(:last-child) {
+  margin-right: 10px;
+  
+}
+
+.team-social:hover {
+  color: #2196f3;
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  fill: currentColor;
+ 
+}
+
+
+
+
+
 /* Стили для portfolio.html */
 
 /*--Предложения--*/
