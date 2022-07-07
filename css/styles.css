@@ -461,6 +461,7 @@ address {
 
 .team-social:hover {
   background-color: var(--social-hover-background);
+  
 }
 
 .icon-social {
