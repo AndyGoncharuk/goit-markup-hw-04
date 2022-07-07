@@ -440,7 +440,9 @@ address {
 }
 
 .team-social {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   border: none;
   width: 44px;
@@ -467,7 +469,7 @@ address {
   display: flex;
   align-items: center;
   fill: currentColor;
- 
+    
 }
 
 
