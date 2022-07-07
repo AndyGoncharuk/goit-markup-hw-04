@@ -461,7 +461,7 @@ address {
 
 .team-social:hover {
   background-color: var(--social-hover-background);
-  
+
 }
 
 .icon-social {
@@ -476,6 +476,25 @@ address {
   fill: var(--social-hover);
 }
 
+
+/*Постоянные клиенты*/
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+.icon-clients  {
+  display: flex;
+  align-items: center;
+  fill: var(--social);
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
 
 
 /* Стили для portfolio.html */
