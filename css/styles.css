@@ -25,7 +25,10 @@
   --products-active: #2196f3;
   --exemplum-product: #757575;
   --team-background: #f5f4fa;
-  --item-team-background: #ffffff;
+  --social: #AFB1B8;
+  --social-hover: #ffffff;
+  --social-background: #ffffff;
+  --social-hover-background: #2196F3;
   --footer-logo-studio: #ffffff;
   --footer-background: #2f303a;
   --address-postoffice: #ffffff;
@@ -439,6 +442,10 @@ address {
   margin: 16px 32px 30px;
 }
 
+.social-links .item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .team-social {
   display: flex;
   justify-content: center;
@@ -447,20 +454,13 @@ address {
   border: none;
   width: 44px;
   height: 44px;
-  fill: red;
   border-radius: 50%;
-  background-color:chartreuse;
+  background-color: var(--social-background);
   background-position: center;
-  
-}
-
-.social-links .item:not(:last-child) {
-  margin-right: 10px;
-  
 }
 
 .team-social:hover {
-  color: #2196f3;
+  background-color: var(--social-hover-background);
 }
 
 .icon-social {
@@ -468,11 +468,12 @@ address {
   height: 20px;
   display: flex;
   align-items: center;
-  fill: currentColor;
-    
+  fill: var(--social);
 }
 
-
+.icon-social:hover {
+  fill: var(--social-hover);
+}
 
 
 
