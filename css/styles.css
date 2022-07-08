@@ -492,20 +492,35 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--social);
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  background-color: var(--social-background);
+  background-position: center;
+}
+.client:hover {
+  border: 1px solid #2196F3;
 }
 
 .icon-client {
   width: 106px;
   height: 60px;
   fill: var(--social);
+  background-color: var(--social-background);
 }
 
-/*.team-social {
+.icon-client:hover {
+  fill: var(--social-hover-background);
+  background-color: var(--social-background);
+}
+
+ /* --social: #AFB1B8;
+  --social-hover: #ffffff;
+  --social-background: #ffffff;
+  --social-hover-background: #2196F3;
+
+.team-social {
   display: flex;
   justify-content: center;
   align-items: center;
