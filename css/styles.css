@@ -377,7 +377,6 @@ address {
 
 .technics {
   display: flex;
-  margin-top: 50px;
 }
 
 .technics .item:not(:last-child) {
@@ -483,18 +482,43 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0;
-  margin: 0 auto;
-
 }
 
-.icon-clients  {
+.clients .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client  {
   display: flex;
   align-items: center;
   fill: var(--social);
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
+
+.icon-client {
+  width: 170px;
+  height: 92px;
+}
+
+/*.team-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--social-background);
+  background-position: center;
+}
+
+.team-social:hover {
+  background-color: var(--social-hover-background);
+
+}
+*/
 
 
 /* Стили для portfolio.html */
