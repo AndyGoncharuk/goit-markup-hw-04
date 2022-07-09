@@ -515,31 +515,6 @@ address {
   background-color: var(--social-background);
 }
 
- /* --social: #AFB1B8;
-  --social-hover: #ffffff;
-  --social-background: #ffffff;
-  --social-hover-background: #2196F3;
-
-.team-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  border: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--social-background);
-  background-position: center;
-}
-
-.team-social:hover {
-  background-color: var(--social-hover-background);
-
-}
-*/
-
-
 /* Стили для portfolio.html */
 
 /*--Предложения--*/
@@ -709,7 +684,7 @@ address {
 }
 
 .footer-logo {
-  display: block;
+  display: inline;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -722,6 +697,14 @@ address {
 
 .footer-logo-studio {
   color: var(--footer-logo-studio);
+}
+
+.calling {
+  display: inline;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--footer-logo-studio);
+  margin-left: 156px;
 }
 
 .address {
