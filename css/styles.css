@@ -673,7 +673,9 @@ address {
 .address-contacts,
 .address-postoffice,
 .address-mail,
-.address-tel {
+.address-tel,
+.footer-contacts,
+.footer-calling {
   margin: 0;
   padding: 0;
 }
@@ -683,8 +685,17 @@ address {
   background: var(--footer-background);
 }
 
+.invite {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  display: block;
+}
+
 .footer-logo {
-  display: inline;
+  /*display: inline;*/
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -699,13 +710,7 @@ address {
   color: var(--footer-logo-studio);
 }
 
-.calling {
-  display: inline;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--footer-logo-studio);
-  margin-left: 156px;
-}
+
 
 .address {
   margin-top: 20px;
@@ -759,4 +764,20 @@ address {
 
 .address-tel:focus {
   color: var(--address-contacts-hover-focus);
+}
+
+.footer-calling {
+  display: block;
+  margin-left: 70px;
+}
+
+.calling {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--footer-logo-studio);
+}
+
+.footer-social {
+  display: flex;
+  margin-top: 20px;
 }
