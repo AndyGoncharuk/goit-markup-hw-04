@@ -34,6 +34,9 @@
   --address-postoffice: #ffffff;
   --address-mail-tel: rgba(255, 255, 255, 0.6);
   --address-contacts-hover-focus: #2196f3;
+  --company-background: rgba(255, 255, 255, 0.1);
+  --company-hover-background: #2196F3;
+  --company-icon:#ffffff;
 
   --team-gap-top: 50px;
   --team-gap-left: 30px;
@@ -458,9 +461,9 @@ address {
   background-position: center;
 }
 
-.team-social:hover {
+.team-social:hover,
+.team-social:focus {
   background-color: var(--social-hover-background);
-
 }
 
 .icon-social {
@@ -471,10 +474,10 @@ address {
   fill: var(--social);
 }
 
-.icon-social:hover {
+.icon-social:hover,
+.icon-social:focus {
   fill: var(--social-hover);
 }
-
 
 /*Постоянные клиенты*/
 
@@ -499,7 +502,8 @@ address {
   background-color: var(--social-background);
   background-position: center;
 }
-.client:hover {
+.client:hover,
+.client:focus {
   border: 1px solid #2196F3;
 }
 
@@ -510,7 +514,8 @@ address {
   background-color: var(--social-background);
 }
 
-.icon-client:hover {
+.icon-client:hover,
+.icon-client:focus {
   fill: var(--social-hover-background);
   background-color: var(--social-background);
 }
@@ -781,3 +786,31 @@ address {
   display: flex;
   margin-top: 20px;
 }
+
+.company-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--company-background);
+  background-position: center;
+}
+
+.footer-social .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.company-social:hover,
+.company-social:focus {
+  background-color: var(--company-hover-background);
+
+}
+
+.company-social .icon-social {
+  fill: var(--company-icon);
+}
+
