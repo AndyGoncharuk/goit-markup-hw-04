@@ -25,6 +25,7 @@
   --products-active: #2196f3;
   --exemplum-product: #757575;
   --team-background: #f5f4fa;
+  --icon-social: #ffffff;
   --social: #AFB1B8;
   --social-hover: #ffffff;
   --social-background: #ffffff;
@@ -449,7 +450,7 @@ address {
   margin-right: 10px;
 }
 
-.team-social {
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,12 +459,13 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--icon-social);
   background-color: var(--social-background);
   background-position: center;
 }
 
-.team-social:hover,
-.team-social:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--social-hover-background);
 }
 
@@ -475,9 +477,9 @@ address {
   fill: var(--social);
 }
 
-.icon-social:hover,
-.icon-social:focus {
-  fill: var(--social-hover);
+.social-link:hover .icon-social,
+.social-link:focus .icon-social {
+  fill: currentColor;
 }
 
 /*Постоянные клиенты*/
@@ -492,7 +494,7 @@ address {
   margin-right: 30px;
 }
 
-.client  {
+.client-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -503,8 +505,8 @@ address {
   background-color: var(--social-background);
   background-position: center;
 }
-.client:hover,
-.client:focus {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid #2196F3;
 }
 
@@ -515,8 +517,9 @@ address {
   background-color: var(--social-background);
 }
 
-.icon-client:hover,
-.icon-client:focus {
+.client-link:hover .icon-client,
+.client-link:focus .icon-client
+{
   fill: var(--social-hover-background);
   background-color: var(--social-background);
 }
